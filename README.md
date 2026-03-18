@@ -9,12 +9,13 @@ _Storage:_ Hive
 
 _UI/UX:_ Dashboard, Expense List, Anaytics Screen
 
-_Core Features:_  Add/delete/edit expenses
+_Core Features:_  
 
-                  Expense list with search and filter
-                  
-                  Daily/ monthly totals
-                  
-_Additional Features (soon to be added):_ Analytics (charts and insights)
-
-                                          Budget Tracking/Limit
+    Add/delete/edit expenses
+    Expense list with search and filter
+    Daily/ monthly totals
+    
+_Additional Features (soon to be added):_ 
+                                          
+    Analytics (charts and insights)
+    Budget Tracking/Limit
