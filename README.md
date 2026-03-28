@@ -1,20 +1,3 @@
-# expensetracker
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # expense-tracker-personal-project
 A mobile application expense tracker that helps users monitor their expenses, analyze their spending habits, and stay within budget. Users can add, edit, and delete expenses, and view totals (Other features will soon be added). Built with Flutter and Hive for offline data storage, it’s designed for anyone who wants an easy and intuitive way to manage personal finances. A personal project by me to practice my skills. 
 
@@ -37,3 +20,63 @@ _Additional Features (soon to be added):_
     Analytics (charts and insights)
     Budget Tracking/Limit
 
+# 📱 Expense Tracker
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
+![Version](https://img.shields.io/badge/Release-v1.0-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+---
+
+## 🚀 Version 1.0 Released!
+
+The first version of the Expense Tracker app is now available 🎉  
+
+This release focuses on the **core features** needed for tracking and managing expenses in a simple and efficient way.
+
+---
+
+## ✨ Core Features Included
+
+### 🏠 Home Page
+- Weekly view of expenses  
+- Daily, weekly, and monthly total spending  
+- Average spending per day  
+- Recent expenses overview  
+- Quick access to add expense (available throughout the app)  
+
+### 📋 Expenses Tab
+- Search expenses by description or category  
+- Filter by time (Today / This Week / This Month)  
+- Complete expenses list  
+- View total expenses (count and amount)  
+- Edit and delete expenses  
+
+### ⚙️ Settings
+
+#### Appearance
+- Dark mode  
+- Currency support (PHP only for now)  
+
+#### Categories
+- Manage expense categories  
+
+#### Data
+- Export data (CSV)  
+- Import data *(coming soon)*  
+
+#### General
+- Notifications *(coming soon)*  
+
+---
+
+## 📥 Download APK
+
+👉 [![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/paoloww-mi/expense-tracker-personal-project/releases/)
+
+---
+
+## 🔮 Upcoming Features
+
+Additional features are currently in development and will be added in future updates, including advanced analytics, notifications, and improved data management.
