@@ -22,8 +22,14 @@ _Additional Features (soon to be added):_
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
-![Version](https://img.shields.io/badge/Release-v1.0-green)
+![Version](https://img.shields.io/badge/Release-v1.0.1-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+
+---
+
+## 📥 Download APK
+
+👉 [![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/paoloww-mi/expense-tracker-personal-project/releases/)
 
 ---
 
@@ -69,12 +75,6 @@ This release focuses on the **core features** needed for tracking and managing e
 
 📱 Available on Android (APK download)  
 🍎 iOS version not available (no Mac environment)
-
----
-
-## 📥 Download APK
-
-👉 [![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/paoloww-mi/expense-tracker-personal-project/releases/)
 
 ---
 
