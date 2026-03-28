@@ -25,11 +25,24 @@ _Additional Features (soon to be added):_
 ![Version](https://img.shields.io/badge/Release-v1.0.1-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
+GastosFlow is a simple mobile app for tracking and managing daily expenses. It allows users to add, edit, and organize expenses while viewing totals by day, week, and month. The app includes search, filters, category management, and dark mode for a better user experience.
+
+Built with Flutter and using local storage, it works fully offline and is designed as a personal project to showcase mobile development skills and UI design.
+
 ---
 
 ## 📥 Download APK
 
 👉 [![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/paoloww-mi/expense-tracker-personal-project/releases/)
+
+---
+
+### v1.0.1
+#### 🔄 Changes
+- Renamed app to **GastosFlow**
+
+#### 🛠️ Improvements
+- Updated UI labels and branding
 
 ---
 
@@ -77,13 +90,6 @@ This release focuses on the **core features** needed for tracking and managing e
 🍎 iOS version not available (no Mac environment)
 
 ---
-
-### v1.0.1
-#### 🔄 Changes
-- Renamed app to **GastosKo**
-
-#### 🛠️ Improvements
-- Updated UI labels and branding
 
 ## 🔮 Upcoming Features
 
