@@ -1,11 +1,9 @@
-# expense-tracker-personal-project
+# expense-tracker-personal-project alpha
 A mobile application expense tracker that helps users monitor their expenses, analyze their spending habits, and stay within budget. Users can add, edit, and delete expenses, and view totals (Other features will soon be added). Built with Flutter and Hive for offline data storage, it’s designed for anyone who wants an easy and intuitive way to manage personal finances. A personal project by me to practice my skills. 
 
 **Technical Description**
 
 _Platform:_ Flutter
-
-_Storage:_ Hive
 
 _UI/UX:_ Dashboard, Expense List, Anaytics Screen
 
@@ -20,7 +18,7 @@ _Additional Features (soon to be added):_
     Analytics (charts and insights)
     Budget Tracking/Limit
 
-# 📱 Expense Tracker
+# 📱 GastosFlow Beta
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
@@ -31,7 +29,7 @@ _Additional Features (soon to be added):_
 
 ## 🚀 Version 1.0 Released!
 
-The first version of the Expense Tracker app is now available 🎉  
+The first version of the Expense Tracker beta app is now available 🎉  
 
 This release focuses on the **core features** needed for tracking and managing expenses in a simple and efficient way.
 
@@ -68,6 +66,9 @@ This release focuses on the **core features** needed for tracking and managing e
 
 #### General
 - Notifications *(coming soon)*  
+
+📱 Available on Android (APK download)  
+🍎 iOS version not available (no Mac environment)
 
 ---
 
