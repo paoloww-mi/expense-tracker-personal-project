@@ -81,3 +81,25 @@ This release focuses on the **core features** needed for tracking and managing e
 ## 🔮 Upcoming Features
 
 Additional features are currently in development and will be added in future updates, including advanced analytics, notifications, and improved data management.
+
+## 📸 Screenshots
+
+### 🏠 Home
+| Light | Dark |
+|------|------|
+| ![Home Light](screenshots/home_light.jpg) | ![Home Dark](screenshots/home_dark.jpg) |
+
+### ➕ Add Expense
+| Light | Dark |
+|------|------|
+| ![Add Light](screenshots/add_light.jpg) | ![Add Dark](screenshots/add_dark.jpg) |
+
+### 📋 Expense List
+| Light | Dark |
+|------|------|
+| ![List Light](screenshots/expense_light.jpg) | ![List Dark](screenshots/expense_dark.jpg) |
+
+### ⚙️ Settings
+| Light | Dark |
+|------|------|
+| ![Settings Light](screenshots/settings_light.jpg) | ![Settings Dark](screenshots/settings_dark.jpg) |
