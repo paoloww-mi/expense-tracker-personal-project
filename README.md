@@ -78,6 +78,13 @@ This release focuses on the **core features** needed for tracking and managing e
 
 ---
 
+### v1.0.1
+#### 🔄 Changes
+- Renamed app to **GastosKo**
+
+#### 🛠️ Improvements
+- Updated UI labels and branding
+
 ## 🔮 Upcoming Features
 
 Additional features are currently in development and will be added in future updates, including advanced analytics, notifications, and improved data management.
