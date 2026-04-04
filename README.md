@@ -1,28 +1,8 @@
-# expense-tracker-personal-project alpha
-A mobile application expense tracker that helps users monitor their expenses, analyze their spending habits, and stay within budget. Users can add, edit, and delete expenses, and view totals (Other features will soon be added). Built with Flutter and Hive for offline data storage, it’s designed for anyone who wants an easy and intuitive way to manage personal finances. A personal project by me to practice my skills. 
-
-**Technical Description**
-
-_Platform:_ Flutter
-
-_UI/UX:_ Dashboard, Expense List, Anaytics Screen
-
-_Core Features:_  
-
-    Add/delete/edit expenses
-    Expense list with search and filter
-    Daily/ monthly totals
-    
-_Additional Features (soon to be added):_ 
-                                          
-    Analytics (charts and insights)
-    Budget Tracking/Limit
-
-# 📱 GastosFlow Beta
+# 📱 GastosFlow
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
-![Version](https://img.shields.io/badge/Release-v1.0.1-green)
+![Version](https://img.shields.io/badge/Release-v1.1.0-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 GastosFlow is a simple mobile app for tracking and managing daily expenses. It allows users to add, edit, and organize expenses while viewing totals by day, week, and month. The app includes search, filters, category management, and dark mode for a better user experience.
@@ -36,64 +16,6 @@ Built with Flutter and using local storage, it works fully offline and is design
 👉 [![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge)](https://github.com/paoloww-mi/expense-tracker-personal-project/releases/)
 
 ---
-
-### v1.0.1
-#### 🔄 Changes
-- Renamed app to **GastosFlow**
-
-#### 🛠️ Improvements
-- Updated UI labels and branding
-
----
-
-## 🚀 Version 1.0 Released!
-
-The first version of the Expense Tracker beta app is now available 🎉  
-
-This release focuses on the **core features** needed for tracking and managing expenses in a simple and efficient way.
-
----
-
-## ✨ Core Features Included
-
-### 🏠 Home Page
-- Weekly view of expenses  
-- Daily, weekly, and monthly total spending  
-- Average spending per day  
-- Recent expenses overview  
-- Quick access to add expense (available throughout the app)  
-
-### 📋 Expenses Tab
-- Search expenses by description or category  
-- Filter by time (Today / This Week / This Month)  
-- Complete expenses list  
-- View total expenses (count and amount)  
-- Edit and delete expenses  
-
-### ⚙️ Settings
-
-#### Appearance
-- Dark mode  
-- Currency support (PHP only for now)  
-
-#### Categories
-- Manage expense categories  
-
-#### Data
-- Export data (CSV)  
-- Import data *(coming soon)*  
-
-#### General
-- Notifications *(coming soon)*  
-
-📱 Available on Android (APK download)  
-🍎 iOS version not available (no Mac environment)
-
----
-
-## 🔮 Upcoming Features
-
-Additional features are currently in development and will be added in future updates, including advanced analytics, notifications, and improved data management.
 
 ## 📸 Screenshots
 
@@ -112,7 +34,165 @@ Additional features are currently in development and will be added in future upd
 |------|------|
 | ![List Light](screenshots/expense_light.jpg) | ![List Dark](screenshots/expense_dark.jpg) |
 
+### ℹ️ Details Screen
+| Light | Dark |
+|------|------|
+| ![List Light](screenshots/details_light.jpg) | ![List Dark](screenshots/details_dark.jpg) |
+
+### ⇅ Sorting Screen
+| Light | Dark |
+|------|------|
+| ![List Light](screenshots/sort_light.jpg) | ![List Dark](screenshots/sort_dark.jpg) |
+
+### ☷ Filtering Screen
+| Light | Dark |
+|------|------|
+| ![List Light](screenshots/filter_light.jpg) | ![List Dark](screenshots/filter_dark.jpg) |
+
 ### ⚙️ Settings
 | Light | Dark |
 |------|------|
 | ![Settings Light](screenshots/settings_light.jpg) | ![Settings Dark](screenshots/settings_dark.jpg) |
+
+### 📢 Import Warning
+| Light | Dark |
+|------|------|
+| ![List Light](screenshots/import_light.jpg) | ![List Dark](screenshots/import_dark.jpg) |
+
+---
+
+## 📝 Changelog
+
+### v1.1.0
+
+#### ✨ New Features
+- Added **remarks** when adding expenses  
+- Expenses can now be **tapped to view full details**  
+- Added **sorting options**:
+  - Recently modified (default)
+  - Description
+  - Category
+  - Amount
+  - Date  
+- Added **filter options**:
+  - By category
+  - By specific date
+  - By amount range  
+- Added **month navigator** to browse previous months  
+- Added **data import feature** (CSV support)  
+
+#### 🔄 Improvements
+- Updated **Expenses Tab layout**:
+  - Removed Action column → replaced with **Date column**
+  - Edit and Delete actions moved to **details screen**  
+- Updated **search functionality**:
+  - Now searches only **description and remarks**
+- Updated **sub-filter chips**:
+  - Now shows: *All / Today / This Week*  
+- Exporting data now:
+  - Saves as **CSV file**
+  - Automatically creates a **GastosFlow folder** in internal storage  
+
+#### ⚠️ Behavior Changes
+- Importing data will:
+  - Show a warning before overwriting existing data  
+  - Recommend exporting current data first  
+
+#### 🧹 Cleanup
+- Removed default/sample data on first install  
+
+#### 🎨 UI / Branding
+- Updated **app icon**
+
+---
+
+### v1.0.1
+#### 🔄 Changes
+- Renamed app to **GastosFlow**
+
+#### 🛠️ Improvements
+- Updated UI labels and branding
+
+---
+
+## 🚀 Initial Release (v1.0) 
+
+This release focuses on the **core features** needed for tracking and managing expenses in a simple and efficient way.
+- Dashboard
+- Daily, weekly, and monthly overview of expenses
+- Expense List
+- Add/Edit/Delete expenses
+
+---
+
+## ✨ Features
+
+### 🏠 Dashboard
+- Weekly overview of expenses  
+- Daily, weekly, and monthly total spending  
+- Average daily spending  
+- Recent expenses preview  
+- Quick access to add a new expense  
+
+---
+
+### ➕ Expense Management
+- Add, edit, and delete expenses  
+- Add **remarks/notes** for each expense  
+- Tap an expense to view **full details**  
+- Manage expenses in a clean and organized interface  
+
+---
+
+### 📋 Expenses Tab
+- View complete list of expenses  
+- Search by **description or remarks**  
+- Sort expenses by:
+  - Recently modified  
+  - Description  
+  - Category  
+  - Amount  
+  - Date  
+- Filter expenses by:
+  - Category  
+  - Specific date  
+  - Amount range  
+- Navigate between months using **Month Navigator**  
+- View total expense count and amount  
+
+---
+
+### ⚙️ Customization & Settings
+#### Appearance
+- Dark mode support  
+- Currency support (PHP)
+
+#### Categories
+- Create, edit, and manage expense categories  
+
+---
+
+### 💾 Data Management
+- Export data as **CSV file**  
+- Import data from CSV (overwrites existing data with confirmation)  
+- Automatic folder creation (**GastosFlow**) in device storage  
+
+---
+
+### 📱 General
+- Fully offline functionality  
+- Fast and lightweight performance  
+- Clean and intuitive UI   
+
+---
+
+## 🔮 Upcoming Features
+
+Additional features are currently in development and will be added in future updates, including advanced analytics, notifications, and improved data management.
+
+---
+
+## 📌 Notes
+
+📱 Available on Android (APK download)  
+🍎 iOS version not available (no Mac environment)
