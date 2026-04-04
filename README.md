@@ -196,3 +196,56 @@ Additional features are currently in development and will be added in future upd
 
 📱 Available on Android (APK download)  
 🍎 iOS version not available (no Mac environment)
+
+---
+
+## 💬 Community & Feedback
+
+We’d love to hear your thoughts and feedback! Join the discussions below:
+
+---
+
+### 💡 Feature Requests
+
+Have an idea to improve GastosFlow? Share your feature suggestions, new tools, or enhancements here.
+
+👉 [Join Feature Requests](https://github.com/paoloww-mi/expense-tracker-personal-project/discussions/1)
+
+---
+
+### 🐞 Bug Reports
+
+Encountered a bug or unexpected behavior? Please report it here.
+
+Include details like steps to reproduce, screenshots (if possible), and your environment so we can fix issues faster.
+
+👉 [Report a Bug](https://github.com/paoloww-mi/expense-tracker-personal-project/discussions/2)
+
+---
+
+### ❓ Questions & Support
+
+Need help using GastosFlow? Ask questions here.
+
+This is a space for guidance, clarifications, and general support. The community or maintainers will try to help you out.
+
+👉 [Ask a Question](https://github.com/paoloww-mi/expense-tracker-personal-project/discussions/3)
+
+---
+
+### 📢 Announcements
+
+Stay updated with the latest releases, updates, and important news about GastosFlow.
+
+👉 [View Announcements](https://github.com/paoloww-mi/expense-tracker-personal-project/discussions/4)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Feel free to:
+- Suggest improvements
+- Report issues
+- Help answer questions
+
+Thank you for helping improve GastosFlow 🚀
