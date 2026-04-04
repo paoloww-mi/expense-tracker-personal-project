@@ -1,4 +1,4 @@
-# <img src="assets/icon/icon.png" width="32" height="32" style="vertical-align: middle;"> GastosFlow
+# <img src="assets/icon/icon.png" width="40" height="40" style="vertical-align: middle;"> GastosFlow
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
