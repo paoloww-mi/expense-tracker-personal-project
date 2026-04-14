@@ -138,11 +138,21 @@ class AppState extends ChangeNotifier {
       _nextExpenseId = expenses.isEmpty
           ? 1
           : expenses.map((e) => e.id).reduce((a, b) => a > b ? a : b) + 1;
-      // Initialize mod order from existing ids (older id = lower mod order)
-      for (int i = 0; i < expenses.length; i++) {
-        _modOrder[expenses[i].id] = i;
+
+      // Restore persisted mod order
+      final modJson = prefs.getString('modOrder');
+      if (modJson != null) {
+        final raw = jsonDecode(modJson) as Map<String, dynamic>;
+        _modOrder.clear();
+        raw.forEach((k, v) => _modOrder[int.parse(k)] = v as int);
+        _nextModOrder = _modOrder.isEmpty ? 0 : _modOrder.values.reduce((a, b) => a > b ? a : b) + 1;
+      } else {
+        // First run after update — seed mod order from expense id (higher id = more recent)
+        for (final e in expenses) {
+          _modOrder[e.id] = e.id;
+        }
+        _nextModOrder = _modOrder.isEmpty ? 0 : _modOrder.values.reduce((a, b) => a > b ? a : b) + 1;
       }
-      _nextModOrder = expenses.length;
     }
     // No seed data — fresh install starts empty
   }
@@ -153,6 +163,8 @@ class AppState extends ChangeNotifier {
     await prefs.setBool('notifications', notificationsEnabled);
     await prefs.setString('categories', jsonEncode(categories.map((c) => c.toJson()).toList()));
     await prefs.setString('expenses', jsonEncode(expenses.map((e) => e.toJson()).toList()));
+    // Persist mod order so "Recently modified" sort survives app restarts
+    await prefs.setString('modOrder', jsonEncode(_modOrder.map((k, v) => MapEntry(k.toString(), v))));
   }
 
   Category? getCategoryByName(String name) {
@@ -288,7 +300,7 @@ class ExpenseTrackerApp extends StatelessWidget {
     return ListenableBuilder(
       listenable: _appState,
       builder: (_, __) => MaterialApp(
-        title: 'Expense Tracker',
+        title: 'GastosFlow',
         debugShowCheckedModeBanner: false,
         theme: _buildTheme(_appState.isDarkMode),
         home: const MainShell(),
@@ -1806,7 +1818,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 4),
               _SettingsGroup(label: 'General', dark: dark, items: [
                 _SettingsToggleRow(label: 'Notifications', value: _appState.notificationsEnabled, dark: dark, onChanged: (_) => _appState.toggleNotifications()),
-                _SettingsTapRow(label: 'About', dark: dark, trailing: Text('v1.1 ›', style: TextStyle(fontSize: 12, color: kTextDim(dark))), onTap: () => _showAboutDialog(context, dark)),
+                _SettingsTapRow(label: 'About', dark: dark, trailing: Text('v1.1.1 ›', style: TextStyle(fontSize: 12, color: kTextDim(dark))), onTap: () => _showAboutDialog(context, dark)),
               ]),
             ]),
           ),
@@ -1872,9 +1884,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
 
     // Try the user-visible public Documents folder first
-    // /storage/emulated/0/Documents/GastosFlow/
+    // /storage/emulated/0/Documents/ExpenseTracker/
     const publicDocs = '/storage/emulated/0/Documents';
-    final publicDir = Directory('$publicDocs/GastosFlow');
+    final publicDir = Directory('$publicDocs/ExpenseTracker');
     try {
       if (!await publicDir.exists()) await publicDir.create(recursive: true);
       return File('${publicDir.path}/$fileName');
@@ -1882,7 +1894,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       // Fallback: use external app-specific dir (still visible via USB/file manager)
       final extDir = await getExternalStorageDirectory();
       if (extDir != null) {
-        final fallback = Directory('${extDir.path}/GastosFlow');
+        final fallback = Directory('${extDir.path}/ExpenseTracker');
         if (!await fallback.exists()) await fallback.create(recursive: true);
         return File('${fallback.path}/$fileName');
       }
@@ -2127,8 +2139,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void _showAboutDialog(BuildContext context, bool dark) {
     showDialog(context: context, builder: (_) => AlertDialog(
       backgroundColor: kSurface(dark),
-      title: Text('Expense Tracker', style: TextStyle(color: kText(dark))),
-      content: Text('Version 1.1.0\nA personal expense tracker built with Flutter.', style: TextStyle(fontSize: 13, color: kPurpleLight(dark))),
+      title: Text('GastosFlow', style: TextStyle(color: kText(dark))),
+      content: Text('Version 1.1.1\nA personal expense tracker built with Flutter.', style: TextStyle(fontSize: 13, color: kPurpleLight(dark))),
       actions: [TextButton(onPressed: () => Navigator.pop(context), child: const Text('OK', style: TextStyle(color: Color(0xFF534AB7))))],
     ));
   }
