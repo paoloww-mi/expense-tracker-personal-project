@@ -63,6 +63,10 @@ Built with Flutter and using local storage, it works fully offline and is design
 
 ## 📝 Changelog
 
+### v1.1.1
+- Fixed "Recently Modified" sorting issue
+- Fixed app name inconsistency across system views
+
 ### v1.1.0
 
 #### ✨ New Features
