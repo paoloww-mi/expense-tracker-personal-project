@@ -2,7 +2,7 @@
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-2.x-blue?logo=dart)
-![Version](https://img.shields.io/badge/Release-v1.1.0-green)
+![Version](https://img.shields.io/badge/Release-v1.1.1-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 GastosFlow is a simple mobile app for tracking and managing daily expenses. It allows users to add, edit, and organize expenses while viewing totals by day, week, and month. The app includes search, filters, category management, and dark mode for a better user experience.
