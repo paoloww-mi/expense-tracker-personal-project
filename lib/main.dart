@@ -1818,7 +1818,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 4),
               _SettingsGroup(label: 'General', dark: dark, items: [
                 _SettingsToggleRow(label: 'Notifications', value: _appState.notificationsEnabled, dark: dark, onChanged: (_) => _appState.toggleNotifications()),
-                _SettingsTapRow(label: 'About', dark: dark, trailing: Text('v1.1.1 ›', style: TextStyle(fontSize: 12, color: kTextDim(dark))), onTap: () => _showAboutDialog(context, dark)),
+                _SettingsTapRow(label: 'About', dark: dark, trailing: Text('v1.1.2 ›', style: TextStyle(fontSize: 12, color: kTextDim(dark))), onTap: () => _showAboutDialog(context, dark)),
               ]),
             ]),
           ),
@@ -1869,7 +1869,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
-  /// Returns a File in Documents/ExpenseTracker/ on internal storage.
+  /// Returns a File in Documents/GastosFlow/ on internal storage.
   /// Creates the folder if it doesn't exist.
   /// Falls back to app documents dir if public storage is inaccessible.
   Future<File> _resolveExportFile(String fileName) async {
@@ -1884,9 +1884,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
 
     // Try the user-visible public Documents folder first
-    // /storage/emulated/0/Documents/ExpenseTracker/
+    // /storage/emulated/0/Documents/GastosFlow/
     const publicDocs = '/storage/emulated/0/Documents';
-    final publicDir = Directory('$publicDocs/ExpenseTracker');
+    final publicDir = Directory('$publicDocs/GastosFlow');
     try {
       if (!await publicDir.exists()) await publicDir.create(recursive: true);
       return File('${publicDir.path}/$fileName');
@@ -1894,7 +1894,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       // Fallback: use external app-specific dir (still visible via USB/file manager)
       final extDir = await getExternalStorageDirectory();
       if (extDir != null) {
-        final fallback = Directory('${extDir.path}/ExpenseTracker');
+        final fallback = Directory('${extDir.path}/GastosFlow');
         if (!await fallback.exists()) await fallback.create(recursive: true);
         return File('${fallback.path}/$fileName');
       }
@@ -2140,7 +2140,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showDialog(context: context, builder: (_) => AlertDialog(
       backgroundColor: kSurface(dark),
       title: Text('GastosFlow', style: TextStyle(color: kText(dark))),
-      content: Text('Version 1.1.1\nA personal expense tracker built with Flutter.', style: TextStyle(fontSize: 13, color: kPurpleLight(dark))),
+      content: Text('Version 1.1.2\nA personal expense tracker built with Flutter.', style: TextStyle(fontSize: 13, color: kPurpleLight(dark))),
       actions: [TextButton(onPressed: () => Navigator.pop(context), child: const Text('OK', style: TextStyle(color: Color(0xFF534AB7))))],
     ));
   }
